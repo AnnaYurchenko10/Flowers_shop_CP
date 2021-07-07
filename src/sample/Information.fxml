@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: #C3DFEE;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.informationController">
+   <children>
+      <ImageView fitHeight="200.0" fitWidth="178.0" layoutX="-7.0">
+         <image>
+            <Image url="@resources/pngfl.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="200.0" fitWidth="178.0" layoutX="589.0">
+         <image>
+            <Image url="@resources/pngegg(1).png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tablefind" layoutX="60.0" layoutY="163.0" prefHeight="337.0" prefWidth="637.0">
+         <columns>
+            <TableColumn fx:id="fioColumn" prefWidth="221.53848266601562" text="ФИО" />
+            <TableColumn fx:id="cardnumberColumn" prefWidth="101.90765380859375" text="Бонусная карта" />
+            <TableColumn fx:id="phoneColumn" prefWidth="132.18463134765625" text="Телефон" />
+            <TableColumn fx:id="emailColumn" prefWidth="177.23074340820312" text="E-mail" />
+         </columns>
+      </TableView>
+      <Label layoutX="212.0" layoutY="58.0" text="Результат поиска" textFill="#25208a" underline="true">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="38.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
